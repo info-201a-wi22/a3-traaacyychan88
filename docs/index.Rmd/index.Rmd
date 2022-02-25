@@ -1,1 +1,11 @@
+---
+title: "Assignment three"
+name : "Tracy Chan"
+date : "2/25/2022"
+----
 
+```{r setup, include=FALSE, warning = FALSE, echo= FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+##**Introduction**
+For this assigment we are looking into a dataset of racism and different 
