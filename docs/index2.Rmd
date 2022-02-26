@@ -1,0 +1,28 @@
+---
+title: "Incarceration Analysis"
+date : "2/25/2022"
+name : "Tracy Chan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Introduction:**
+
+  For this assigment we are looking into a dataset of different incarceration trends over time. The first variable I am choosing to analyze is the `black_jail_pop`. I chose this variable since I think that it has significant trends in the data set I think that you will be able to see certain trends within this variable since after watching the documentary it talked about a lot of racism towards black citizens as they did not have a high social class and officers were blamning lots of crimes on the black citizens. I am also going to analyze the `white_jail_pop` I want to compare this to the `black_jail_pop`, so in my variables I did the total `white_jail_pop`, and total `black_jail_pop`. Then I wanted to see the total number of `female_jail_pop` vs the `male_jail_pop` you can see a significant difference in the numbers of the two. I also wanted to see the `black_female_jail_pop` in TX and compare it to the `white_female_jail_pop` and suprisingly the outcomes for the two were totally not what I guessed it would be, the black female jail population would be a lot more than the white female jail population. I also wanted to know what state had the highest `black_jail_pop` and which state had the highest `white_jail_pop` and I found that New York had the highest black jail population, while California had the highest white male jail population which was very suprising to me.
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
