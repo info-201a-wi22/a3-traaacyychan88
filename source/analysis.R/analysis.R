@@ -29,6 +29,11 @@ total_female_pop <- County_level_csv %>%
   filter(female_jail_pop == max(female_jail_pop,na.rm = TRUE)) %>%
   pull(female_jail_pop)
 
+#Sub Variable : Total Number of Male Incarceration
+total_male_pop <- County_level_csv %>%
+  filter(male_jail_pop == max(male_jail_pop,na.rm = TRUE)) %>%
+  pull(male_jail_pop)
+
 #Variable 4 : State with highest Black Incarceration 
 highest_black_pop <- County_level_csv %>%
   drop_na()%>%
@@ -41,18 +46,18 @@ highest_white_pop <- County_level_csv %>%
   filter(white_jail_pop == max(white_jail_pop))%>%
   pull(state)
 
-#Variable 5: Total Number of Black Male Incarceration in TX State 
+#Variable 5: Total Number of Black Female Incarceration in TX State 
 black_incarceration_tx <- County_level_csv %>%
   drop_na() %>%
   filter(state =="TX")%>%
-  filter(black_jail_pop == max(black_jail_pop))%>%
-  pull(black_jail_pop)
+  filter(black_female_prison_pop == max(black_female_prison_pop))%>%
+  pull(black_female_prison_pop)
 
 
-  #Sub Variable: Total Number of Male Incarceration in TX State 
-white_incarceration_tx <- County_level_csv %>%
+  #Sub Variable: Total Number of White Female Incarceration in TX State 
+white_female_incarceration_tx <- County_level_csv %>%
   drop_na() %>%
   filter(state =="TX")%>%
-  filter(white_jail_pop == max(white_jail_pop))%>%
-  pull(white_jail_pop)
+  filter(white_female_prison_pop == max(white_female_prison_pop))%>%
+  pull(white_female_prison_pop)
 
