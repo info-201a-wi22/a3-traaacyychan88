@@ -22,7 +22,6 @@ knitr::opts_chunk$set(echo = TRUE)
   
 **Maps**
 
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 library(leaflet)
